@@ -250,7 +250,7 @@ class DeliveryRepository implements IDeliveryRepository {
         // });
 
         const history = await this.ormRepository.manager.query(
-            `SELECT deliveries.id, to_char(deliveries.created_at, 'DD-MM-YYYY'), adress.value FROM deliveries INNER JOIN adress ON deliveries.adress_id = adress.id WHERE user_id = '${store_id}' AND status = 1 AND to_char(deliveries.created_at, 'YYYY-MM-DD') BETWEEN '${inicial_year}-${parsedInicialMonth}-${parsedInicialDay}' AND '${final_year}-${parsedFinalMonth}-${parsedFinalDay}'`,
+            `SELECT deliveries.id, to_char(deliveries.created_at, 'DD-MM-YYYY'), adress.value FROM deliveries INNER JOIN adress ON deliveries.adress_id = adress.id WHERE user_id = '${store_id}' AND status = 1 AND to_char(deliveries.created_at, 'YYYY-MM-DD') BETWEEN '${inicial_year}-${parsedInicialMonth}-${parsedInicialDay}' AND '${final_year}-${parsedFinalMonth}-${parsedFinalDay}' ORDER BY deliveries.created_at ASC`,
         );
 
         return history;
@@ -296,7 +296,7 @@ class DeliveryRepository implements IDeliveryRepository {
         const parsedFinalMonth = String(final_month).padStart(2, '0');
 
         const history = await this.ormRepository.manager.query(
-            `SELECT deliveries.id, to_char(deliveries.created_at, 'DD-MM-YYYY'), adress.value FROM deliveries INNER JOIN adress ON deliveries.adress_id = adress.id WHERE user_id = '${user_id}' AND to_char(deliveries.created_at, 'YYYY-MM-DD') BETWEEN '${inicial_year}-${parsedInicialMonth}-${parsedInicialDay}' AND '${final_year}-${parsedFinalMonth}-${parsedFinalDay}'`,
+            `SELECT deliveries.id, to_char(deliveries.created_at, 'DD-MM-YYYY'), adress.value FROM deliveries INNER JOIN adress ON deliveries.adress_id = adress.id WHERE user_id = '${user_id}' AND to_char(deliveries.created_at, 'YYYY-MM-DD') BETWEEN '${inicial_year}-${parsedInicialMonth}-${parsedInicialDay}' AND '${final_year}-${parsedFinalMonth}-${parsedFinalDay}' ORDER BY deliveries.created_at ASC`,
         );
 
         return history;

@@ -25,7 +25,11 @@ class CategoriesRepository implements ICategoryRepository {
     }
 
     public async show(): Promise<Category[] | undefined> {
-        const category = this.ormRepository.find();
+        // const category = this.ormRepository.find();
+
+        const category = this.ormRepository.manager.query(
+            'SELECT * FROM category ORDER BY title ASC',
+        );
 
         return category;
     }
