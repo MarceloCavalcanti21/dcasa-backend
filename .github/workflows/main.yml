@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v1.4.3
         with:
-          node-version: 12.x
+          node-version: 12.18.4
 
       # Instalar dependências do YARN
       - name: Install dependencies
