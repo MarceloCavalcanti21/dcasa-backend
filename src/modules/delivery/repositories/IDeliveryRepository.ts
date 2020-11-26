@@ -16,7 +16,7 @@ export default interface IDeliveryRepository {
     save(delivery: Delivery): Promise<Delivery>;
     // Busca pelo ID de um registro
     findById(id: string): Promise<Delivery | undefined>;
-    // Exclui o registro
+    // Exclui o registro: ADMIN
     remove(id: string): Promise<void>;
     // Lista para o estabelecimento, a lista de pedido em aberto que ele tem
     showMine(user_id: string): Promise<Delivery[]>;

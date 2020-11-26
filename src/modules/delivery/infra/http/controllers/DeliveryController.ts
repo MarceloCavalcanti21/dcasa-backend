@@ -7,6 +7,7 @@ import { classToClass } from 'class-transformer';
 
 import CreateDeliveryService from '@modules/delivery/services/CreateDeliveryService';
 import RemoveDeliveryService from '@modules/delivery/services/RemoveDeliveryService';
+import RemoveDeliveryForStoreService from '@modules/delivery/services/RemoveDeliveryForStoreService';
 import ListMineDebtsService from '@modules/delivery/services/ListMineDebtsService';
 import ListDebtsService from '@modules/delivery/services/ListDebtsService';
 import SumMineDebtsService from '@modules/delivery/services/SumMineDebtsService';
@@ -72,6 +73,21 @@ export default class DeliveryController {
         return response.json(classToClass(delivery));
     }
 
+    // ESTABELECIMENTO
+    public async removeForStore(
+        request: Request,
+        response: Response,
+    ): Promise<Response> {
+        const { id } = request.params;
+
+        const removeDelivery = container.resolve(RemoveDeliveryForStoreService);
+
+        await removeDelivery.execute(id);
+
+        return response.json({ response: 'Entrega excluída com sucesso!' });
+    }
+
+    // ADMIN
     public async remove(
         request: Request,
         response: Response,

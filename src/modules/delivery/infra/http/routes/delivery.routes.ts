@@ -111,4 +111,14 @@ deliveryRouter.delete(
     deliveryController.remove,
 );
 
+deliveryRouter.delete(
+    '/store/:id',
+    celebrate({
+        [Segments.PARAMS]: {
+            id: Joi.string().required(),
+        },
+    }),
+    deliveryController.removeForStore,
+);
+
 export default deliveryRouter;
