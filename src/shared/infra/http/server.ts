@@ -29,7 +29,8 @@ const io = socketio(server);
 
 // Ouve o FRONT-END, quando ele emite a mensagem 'generate', indicando um nova entrega e chama a função de resposta.
 io.on('connection', socket => {
-    // socket.on('generate', reciveDeliverySocket);
+    // socket.on('generate', reciveDeliverySocket); // Função original
+    socket.on('online', () => {}); // Mantém a aplicação ativa quando em background
 });
 
 app.use(rateLimiter);
