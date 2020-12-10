@@ -4,6 +4,8 @@
 
 import { getRepository, Repository, Between, Raw } from 'typeorm';
 
+import { format } from 'date-fns';
+
 import IDeliveryRepository from '@modules/delivery/repositories/IDeliveryRepository';
 import ICreateDeliveryDTO from '@modules/delivery/dtos/ICreateDeliveryDTO';
 import IListDeliveryDTO from '@modules/delivery/dtos/IListDeliveryDTO';
@@ -172,10 +174,20 @@ class DeliveryRepository implements IDeliveryRepository {
     public async showMineAcceptedDeliveries(
         user_id: string,
     ): Promise<Delivery[]> {
+        const today = new Date();
+
+        const year = format(today, 'yyyy');
+        const month = format(today, 'MM');
+        const day = format(today, 'dd');
+
         const deliveries = await this.ormRepository.find({
             where: {
                 motoboy_id: Raw(
                     dateFieldName => `${dateFieldName} = '${user_id}'`,
+                ),
+                created_at: Raw(
+                    dateFieldName =>
+                        `${dateFieldName} BETWEEN '${year}-${month}-${day} 00:00:00' AND '${year}-${month}-${day} 23:59:59'`,
                 ),
             },
             relations: ['store', 'adress'],
