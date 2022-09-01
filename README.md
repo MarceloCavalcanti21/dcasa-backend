@@ -53,7 +53,7 @@ Da mesma forma, quando utilizamos Node.js juntamente com o Express, uma requisi�
 
 Veja um exemplo de implementação básica:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/beca9dc1-1ce4-48c8-bd69-aaf62b8ca592/Untitled.png)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/beca9dc1-1ce4-48c8-bd69-aaf62b8ca592/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220901%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220901T023118Z&X-Amz-Expires=86400&X-Amz-Signature=ba17d6760026b8c928fb40d2aa9b34338c0b043c03591264d54dd8eaeb80db0d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 Como mostra o exemplo acima, um middleware, no Express, recebe três parâmetros:
 
