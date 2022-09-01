@@ -33,7 +33,7 @@
 
 Antes de entendermos o que é um middleware, é muito importante que tenhamos um conceito prévio do que é o Express e como esses dois componentes interagem para atender as requisições de uma API com Node.
 
-Imagine que você pretende construir uma funcionalidade na sua aplicação que retorna uma lista de produtos. Como já aprendemos, cada requisição feita à nossa aplicação irá trafegar pela rede, chegar até o servidor, passar pelo respectivo caminho dentro da API **e retornar uma resposta, certo? Em termos simples, o Express é o responsável pelas "estradas” que vão existir dentro da aplicação e por conduzir cada requisição ao seu destino correto.
+Imagine que você pretende construir uma funcionalidade na sua aplicação que retorna uma lista de produtos. Como já aprendemos, cada requisição feita à nossa aplicação irá trafegar pela rede, chegar até o servidor, passar pelo respectivo caminho dentro da API e retornar uma resposta, certo? Em termos simples, o Express é o responsável pelas "estradas” que vão existir dentro da aplicação e por conduzir cada requisição ao seu destino correto.
 
 Tecnicamente falando, o Express é um *framework* capaz de gerenciar requisições HTTP de uma forma simples e performática, além de possibilitar um tratamento de exceções bem completo.
 
@@ -206,6 +206,10 @@ Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5NHqHr_WP7Q/0.jpg)](https://www.youtube.com/watch?v=5NHqHr_WP7Q)
 
+[Clique aqui para visualizar o vídeo](https://deciduous-result-609.notion.site/Express-Middlewares-globais-bbbc4543cedc4ce884ce1c6602f7a4db)
+
+[Aula - Middlewares com Express.mov](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab555f5b-c36a-4d78-a9c3-3478eb27ef05/Aula_-_Middlewares_com_Express.mov)
+
 ## Exercícios
 
 1. Qual das implementações abaixo segue princípios de boas-práticas na implementação de middlewares?
@@ -233,7 +237,7 @@ Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos
     3. Um middleware pode acessar as propriedades da `request`
 2. Se um mesmo middleware será utilizado em todas as sub-rotas de determinado escopo, qual seria a melhor forma de implementá-lo?
     1. `app.get('/', ensureAuthenticated, (req, res) => {…`
-    2. `app.use(ensureAuthenticated); 
+    2. `app.use(ensureAuthenticated);`
 
 ## Gabarito - Exercícios bônus
 
