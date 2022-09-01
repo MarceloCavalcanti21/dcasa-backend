@@ -204,7 +204,7 @@ Geralmente, em uma API Node.js, as rotas ficam separadas por escopo, de acordo c
 
 Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos princípios mencionados acima:
 
-**(VÍDEO)**
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5NHqHr_WP7Q/0.jpg)](https://www.youtube.com/watch?v=5NHqHr_WP7Q)
 
 ## Exercícios
 
@@ -234,8 +234,6 @@ Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos
 2. Se um mesmo middleware será utilizado em todas as sub-rotas de determinado escopo, qual seria a melhor forma de implementá-lo?
     1. `app.get('/', ensureAuthenticated, (req, res) => {…`
     2. `app.use(ensureAuthenticated); 
-     app.get('/products', (req, res) => {…`
-     `app.get('/services', (req, res) => {…`
 
 ## Gabarito - Exercícios bônus
 
@@ -245,5 +243,5 @@ Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos
 ---
 
 # Recursos adicionais
-    - https://expressjs.com/
-    - https://expressjs.com/pt-br/guide/using-middleware.html
+- Veja a [documentação oficial do express](https://expressjs.com/).
+- E também [mais detalhes sobre middlewares com Express](https://expressjs.com/pt-br/guide/using-middleware.html).
