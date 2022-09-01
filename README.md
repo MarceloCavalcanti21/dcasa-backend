@@ -208,10 +208,7 @@ Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos
 
 [![Vídeo](https://img.youtube.com/vi/5NHqHr_WP7Q&t=1s/0.jpg)](https://www.youtube.com/watch?v=5NHqHr_WP7Q&t=1s)
 
-[![Vídeo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-
-[![Fibonacci RMI Java EE](http://img.youtube.com/vi/nX_inqaAzOI/0.jpg)](https://www.youtube.com/watch?v=nX_inqaAzOI&feature=youtu.be&hd=1 "RMI Fibonacci Java")
-
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/5NHqHr_WP7Q&t=1s5NHqHr_WP7Q&t=1s/0.jpg)](http://www.youtube.com/watch?v=5NHqHr_WP7Q&t=1s "Video Title")
 
 ## Exercícios
 
