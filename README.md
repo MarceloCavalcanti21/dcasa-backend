@@ -204,11 +204,14 @@ Geralmente, em uma API Node.js, as rotas ficam separadas por escopo, de acordo c
 
 Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos princípios mencionados acima:
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5NHqHr_WP7Q/0.jpg)](https://www.youtube.com/watch?v=5NHqHr_WP7Q)
-
 [Clique aqui para visualizar o vídeo](https://deciduous-result-609.notion.site/Express-Middlewares-globais-bbbc4543cedc4ce884ce1c6602f7a4db)
 
-[Aula - Middlewares com Express.mov](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab555f5b-c36a-4d78-a9c3-3478eb27ef05/Aula_-_Middlewares_com_Express.mov)
+[![Vídeo](https://img.youtube.com/vi/5NHqHr_WP7Q&t=1s/0.jpg)](https://www.youtube.com/watch?v=5NHqHr_WP7Q&t=1s)
+
+[![Vídeo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
+[![Fibonacci RMI Java EE](http://img.youtube.com/vi/nX_inqaAzOI/0.jpg)](https://www.youtube.com/watch?v=nX_inqaAzOI&feature=youtu.be&hd=1 "RMI Fibonacci Java")
+
 
 ## Exercícios
 
