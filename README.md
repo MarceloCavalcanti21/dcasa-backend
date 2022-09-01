@@ -98,7 +98,7 @@ Agora vamos ver, por meio de um exemplo prático, as operações primárias de u
 
 Nosso usuário utilizará uma rota da API para consulta de produtos. Porém, antes de receber a lista, teremos uma etapa de validação, para verificar se ele tem a permissão de administrador para obter esse acesso:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63bc1396-86be-430f-8489-58a6b634a021/Untitled.png)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/63bc1396-86be-430f-8489-58a6b634a021/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220901%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220901T023250Z&X-Amz-Expires=86400&X-Amz-Signature=52084fe4c6acaa70a1b0415c7cde005407fcaffa46e7d4a3acb4845e204f2b21&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 Note que estamos obtendo o nível de acesso do usuário por meio de `Route Params`, pelo parâmetro `:userLevel` (linhas 5 e 6), e validando se ele satisfaz o requisito de ser do tipo `adm` ou não (linha 8). 
 
@@ -111,7 +111,7 @@ Se essa validação for bem-sucedida, faremos duas coisas:
 
 Agora vamos continuar observando o fluxo da nossa requisição:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9df274ae-d445-445e-a480-dbf40ea8a0c4/Untitled.png)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9df274ae-d445-445e-a480-dbf40ea8a0c4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220901%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220901T023332Z&X-Amz-Expires=86400&X-Amz-Signature=0f1e7dd4de44a7711b69475772f7e9ee457c0db0455cb7f507ad902d418bd4d9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 Caso a primeira etapa seja bem-sucedida, teremos o seguinte comportamento:
 
@@ -126,7 +126,7 @@ Pronto! Acabamos de criar nosso primeiro middleware!
 
 Veja como ficou nosso arquivo completo:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90fac528-44ed-4ba6-98fe-1b52da8d629c/Untitled.png)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/90fac528-44ed-4ba6-98fe-1b52da8d629c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220901%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220901T023350Z&X-Amz-Expires=86400&X-Amz-Signature=75a93fa1d3b5d87a7e5ad22b750230977babae1e7842c06bd20ba931efe5e5f8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 ### Implementação intermediária de um middleware
 
@@ -137,11 +137,11 @@ Se quisermos deixar a implementação do nosso middleware um pouco mais refinada
 
 Veja o exemplo abaixo:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/41ca76c2-b939-47df-a55d-4237b7c07dde/Untitled.png)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/41ca76c2-b939-47df-a55d-4237b7c07dde/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220901%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220901T023420Z&X-Amz-Expires=86400&X-Amz-Signature=da76e3db330406ecbae720bbb05064da0a2b6d4db2567b04f11e811340b89b3f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 Para que esse middleware tenha efeito sob a rota indicada, ele deverá ser passado como segundo parâmetro (linha 16), como na imagem:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e70ed6e5-a493-4ca7-9490-453f0e3695b7/Untitled.png)
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e70ed6e5-a493-4ca7-9490-453f0e3695b7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220901%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220901T023436Z&X-Amz-Expires=86400&X-Amz-Signature=74192962a2744c3380f4e73ddd870bf6780171a8b249863932d284ecb051da1e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 Mas tão importante quanto entender e construir um middleware é saber **quando** ele deve ser utilizado.
 
