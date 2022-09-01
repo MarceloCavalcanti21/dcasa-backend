@@ -206,9 +206,7 @@ Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos
 
 [Clique aqui para visualizar o vídeo](https://deciduous-result-609.notion.site/Express-Middlewares-globais-bbbc4543cedc4ce884ce1c6602f7a4db)
 
-[![Vídeo](https://img.youtube.com/vi/5NHqHr_WP7Q&t=1s/0.jpg)](https://www.youtube.com/watch?v=5NHqHr_WP7Q&t=1s)
-
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/5NHqHr_WP7Q&t=1s5NHqHr_WP7Q&t=1s/0.jpg)](http://www.youtube.com/watch?v=5NHqHr_WP7Q&t=1s "Video Title")
+[![Vídeo](https://img.youtube.com/vi/5NHqHr_WP7Q/0.jpg)](https://www.youtube.com/watch?v=5NHqHr_WP7Q)
 
 ## Exercícios
 
