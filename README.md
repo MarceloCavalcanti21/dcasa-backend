@@ -245,3 +245,5 @@ Para tudo ficar mais claro, assista ao vídeo que gravamos, aplicando alguns dos
 ---
 
 # Recursos adicionais
+    - https://expressjs.com/
+    - https://expressjs.com/pt-br/guide/using-middleware.html
